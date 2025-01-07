@@ -1,0 +1,58 @@
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color:black;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    width: 50%;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: orange;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+h2 {
+    text-align: center;
+    color: white;
+}
+label {
+    font-size: 16px;
+    margin-bottom: 8px;
+    display: block;
+    color: white;
+}
+input, select, button {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+button {
+    background-color: rgb(245, 181, 62);
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s ease-in-out;
+}
+button:hover {
+    background-color: rgb(247, 197, 104);
+    padding: 12px;
+}
+.form-group {
+    margin-bottom: 15px;
+}
+.back{
+    width: 100%;
+}
+.back button{
+    width: 200px;
+    float: right;
+}
+.back button a{
+    text-decoration: none;
+    color: white;
+}

@@ -1,0 +1,254 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+}
+
+.header{
+    background-color: orange;
+    position: fixed;
+    width: 100%;
+    padding: 20px;
+    height: auto;
+    display: flex;
+    flex-direction: row;  
+    justify-content: center; 
+}
+.header .nav_part_left {
+    float: left;
+    font-size: 2.2em;
+    width: 50%;
+    color: white;
+    margin-left: 60px;
+}
+.header .nav_part_left img{
+width: 50px;
+float: left;
+}
+.header .nav_part_left b{
+  margin-top: 100px;
+    }
+.header .nav_part_right{
+    width: 50%;  
+    justify-content: space-evenly;
+    margin-top:5px ;
+}
+.header .nav_part_right a{
+    transition: all 0.3s ease-in-out;
+    text-decoration:none;
+    color: rgb(246, 242, 242);
+    font-size: 2em;
+    padding: 20px;
+    
+    
+}
+.header .nav_part_right a:hover{
+background-color: transparent;
+font-size: 2.1em;
+}
+
+.title{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+}
+
+.title h1{
+    margin-top: 120px;
+    color: white;
+}
+
+
+.menu_container{
+    width: 100%;
+    display: flex;
+    flex-direction:column;
+    padding: 20px;
+    justify-content: space-evenly;
+}
+.menu_container .block{
+    margin-left: 500px;
+    width: 30%;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction:column;
+    background-color: rgb(17, 17, 17);
+    border-radius: 50px;
+    text-align: center;
+    box-shadow: 5px 5px orange;
+    transition: all 0.3s ease-in-out;
+}
+
+.menu_container .block:hover{
+    padding: 10px;
+}
+
+.menu_container .block .img_menu{
+    width:33%;
+    
+}
+
+.menu_container .img_menu img{
+    width: 320px;
+    height: 220px;
+    border-radius: 90px;
+    margin-left: 70px;
+}
+
+.menu_container .block h1 {
+color: white;
+}
+
+.menu_container .block p{
+    color: white;
+    font-size: 1.5em;
+}
+
+button{
+    width: 200px;
+    background-color: orange;
+    padding: 40px;
+    border-radius: 30px;
+    margin-bottom: 10px;
+    margin-left: 630px;
+}
+/* footer */
+
+footer {
+    background-color:orange;
+     display: flex;
+     flex-direction: column;
+     width: 100%;
+   }
+ 
+   footer .logo {
+     width: 100%;
+     display: flex;
+     justify-content: center;
+   }
+   footer .logo img {
+     width: 50px;
+     height: 50px;
+     border-radius: 18px;
+     box-sizing: border-box;
+     padding: 10px;
+     transition: all 0.3s ease-in-out;
+   }
+   footer .logo img:hover {
+     width: 55px;
+     height: 55px;
+   }
+   footer .nav_part1 {
+     display: flex;
+     width: 100%;
+     justify-content: center;
+   }
+   footer .nav_part1 span {
+     padding: 20px;
+   }
+   footer .nav_part1 a {
+     text-align: cetner;
+     font-size: 1.5em;
+     box-sizing: border-box;
+     text-decoration: none;
+     color: white;
+     transition: all 0.3s ease-in-out;
+   }
+   footer .nav_part1 a:hover {
+     background-color: transparent;
+     font-size: 1.6em;
+   }
+   
+   footer .footer-buttom {
+     display: flex;
+     justify-content: center;
+   }
+   footer .footer-buttom span {
+     font-size: 1.3em;
+     color: white;
+   }
+
+   button a{
+    text-decoration: none;
+    font-size: 2em;
+    color: white;
+
+}
+
+
+
+
+@media only screen and (max-width: 599px) {
+    .header{
+        padding: 20px;
+         width: 100%;
+         margin: 0px;
+     }
+     .header .nav_part_left {
+         float: left;
+         font-size: 1.1em;
+         width: 30%;
+         color: white;
+         margin-left: 0px;
+         margin-top: 4px;
+     }
+     .header .nav_part_left img{
+     width: 20px;
+     }
+     
+     .header .nav_part_right{
+         width: 70%;  
+         justify-content: space-evenly;
+         margin-left: 0px;
+         margin-right: 15px;
+    
+     }
+     .header .nav_part_right a{
+         text-decoration:none;
+         color: rgb(246, 242, 242);
+         font-size: 1em;
+     }
+     .header .nav_part_right a:hover{
+       font-size: 17px;
+     }
+
+
+     .menu_container{
+        width: 100%;
+        display: flex;
+        flex-direction:column;
+        padding: 20px;
+    }
+
+    .menu_container .block{
+        margin-left: 70px;
+        width: 60%;
+        margin-bottom: 30px;
+    }
+    .menu_container .img_menu img{
+        width: 200px;
+
+    }
+    .menu_container .block:hover{
+        padding: 10px;
+    }
+
+    button{
+        width: 200px;
+        background-color: orange;
+        padding: 35px;
+        border-radius: 30px;
+        margin-bottom: 10px;
+        margin-left: 180px;
+ 
+    }
+    button a{
+        text-decoration: none;
+        font-size: 2em;
+        color: white;
+
+    }
+   }

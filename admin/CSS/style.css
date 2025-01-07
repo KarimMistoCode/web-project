@@ -1,0 +1,188 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+.dashboard-container {
+    display: flex;
+    height: 100vh;
+    flex-wrap: wrap; /* Allows wrapping for smaller screens */
+}
+
+/* Sidebar */
+.sidebar {
+    background-color: orange;
+    color: #ecf0f1;
+    width: 250px;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.logo h1 {
+    margin: 0;
+    font-size: 24px;
+    text-align: center;
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.menu ul li {
+    margin-bottom: 15px;
+}
+
+.menu ul li a {
+    color: #ecf0f1;
+    text-decoration: none;
+    font-size: 16px;
+    display: block;
+    padding: 10px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.menu ul li a:hover {
+    background-color:  rgb(236, 167, 39);
+}
+
+/* Main Content */
+.main {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    min-width: 0; /* Prevent overflow */
+}
+
+.topbar {
+    margin-top: 20px;
+    margin-left: 20px;
+    background-color: orange;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+}
+
+.topbar h2 {
+    margin: 0;
+}
+
+.profile span {
+    font-weight: bold;
+}
+
+/* Content */
+.content {
+    padding: 20px;
+}
+
+.summary-cards {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+    flex-wrap: wrap; /* Wrap cards for smaller screens */
+}
+
+.card {
+    flex: 1 1 calc(33.333% - 20px); /* Three cards per row, adjusts for spacing */
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    min-width: 200px;
+}
+
+.card h3 {
+    margin: 0;
+    font-size: 18px;
+    color: #7f8c8d;
+}
+
+.card p {
+    margin: 10px 0 0;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Data Section */
+.data-section {
+    background-color: orange;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow-x: auto; /* Scroll horizontally on small screens */
+}
+
+.data-table h3 {
+    margin-bottom: 15px;
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+thead th {
+    text-align: left;
+    padding: 10px;
+    background-color: orange;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: orange
+}
+
+td, th {
+    padding: 10px;
+    border-bottom: 1px solid orange;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 200px; /* Narrower sidebar */
+    }
+
+    .topbar {
+        flex-direction: column; /* Stack topbar items */
+        align-items: flex-start;
+    }
+
+    .summary-cards .card {
+        flex: 1 1 calc(50% - 20px); /* Two cards per row on medium screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .dashboard-container {
+        flex-direction: column; /* Stack sidebar and content */
+    }
+
+    .sidebar {
+        width: 100%; /* Full-width sidebar */
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: auto;
+        z-index: 1000;
+    }
+
+    .main {
+        margin-top: 250px; /* Push content below sidebar */
+    }
+
+    .summary-cards .card {
+        flex: 1 1 100%; 
+    }
+}
